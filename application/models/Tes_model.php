@@ -273,7 +273,7 @@ class Tes_model extends MY_Model {
         $this->db->select("CONVERT(no_doc, UNSIGNED INTEGER) AS num");
         $this->db->from("peserta_toeic as a");
         $this->db->join("tes as b", "a.id_tes = b.id_tes");
-        $this->db->where("YEAR(tgl_tes)", $date);
+        // $this->db->where("YEAR(tgl_tes)", $date);
         $this->db->order_by("num", "DESC");
         $data = $this->db->get()->row_array();
 

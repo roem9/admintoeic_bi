@@ -49,8 +49,8 @@
         .qrcode{
             width: 210px;
 			position: absolute;
-            left: 44px;
-			bottom: 40px;
+            left: 51px;
+			bottom: 85px;
             font-size: 35px;
             word-spacing: 3px;
         }
@@ -60,7 +60,7 @@
             width: 600px;
 			position: absolute;
             left: 100px;
-			top: 200px;
+			top: 250px;
             font-size: 26px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
@@ -93,8 +93,8 @@
             /* background-color: yellow; */
             width: 120px;
 			position: absolute;
-            left: 450px;
-			top: 328px;
+            left: 398px;
+			top: 320px;
             font-size: 14px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
@@ -115,8 +115,8 @@
             /* background-color: red; */
             width: 120px;
 			position: absolute;
-            left: 450px;
-			top: 369px;
+            left: 398px;
+			top: 339px;
             font-size: 14px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
@@ -126,8 +126,8 @@
             /* background-color: green; */
             width: 120px;
 			position: absolute;
-            left: 450px;
-			top: 388px;
+            left: 398px;
+			top: 358px;
             font-size: 14px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
@@ -156,9 +156,9 @@
         .tgl_tes{
             /* background-color: red; */
 			position: absolute;
-            left: 606px;
-			bottom: 109px;
-            font-size: 14px;
+            left: 386px;
+			bottom: 23px;
+            font-size: 12px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
         }
@@ -167,8 +167,8 @@
             /* background-color: red; */
             width: 200px;
 			position: absolute;
-            left: 380px;
-			top: 148px;
+            left: 428px;
+			top: 215px;
             font-size: 13px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
@@ -213,20 +213,20 @@
 </head>
     <body style="text-align: center">
         <div class="qrcode">
-            <img src="<?= base_url()?>assets/qrcode_toeic/<?= $id?>.png" width=135 alt="">
+            <img src="<?= base_url()?>assets/qrcode_toeic/<?= $id?>.png" width=100 alt="">
         </div>
         <div class="nilai"><p style="text-align: right; margin: 0px"><b><?= round($skor)?></b></p></div>
-        <div class="nama"><p style="text-align: center; margin: 0px"><b><u><?= $nama?></u></b></p></div>
-        <div class="ttl"><p style="text-align: center; margin: 0px"><b><?= tgl_sertifikat(date("d-m-Y", strtotime($tgl_lahir)))?></b></p></div>
-        <div class="t4"><p style="text-align: center; margin: 0px;"><?= $t4_lahir?></p></div>
+        <div class="nama"><p style="text-align: center; margin: 0px"><b><?= $nama?></b></p></div>
+        <!-- <div class="ttl"><p style="text-align: center; margin: 0px"><b><?= tgl_sertifikat(date("d-m-Y", strtotime($tgl_lahir)))?></b></p></div> -->
+        <!-- <div class="t4"><p style="text-align: center; margin: 0px;"><?= $t4_lahir?></p></div> -->
         <!-- <div class="gender"><p style="text-align: center; margin: 0px"><?= $jk?></p></div>
         <div class="country"><p style="text-align: center; margin: 0px"><?= $country?></p></div>
         <div class="language"><p style="text-align: center; margin: 0px"><?= $language?></p></div> -->
         <div class="listening"><p style="text-align: right; margin: 0px"><b><?= $listening?></b></p></div>
         <div class="reading"><p style="text-align: right; margin: 0px"><b><?= $reading?></b></p></div>
         <div class="no_doc"><p style="margin: 0px"><?= $no_doc?></p></div>
-        <div class="tgl"><p style="text-align: center; margin: 0px"><?= date("d/m/y", strtotime($tgl_tes))?></p></div>
-        <div class="tgl_akhir"><p style="text-align: center; margin: 0px"><?= date("d/m/y", strtotime('+1 years', strtotime($tgl_tes)))?></p></div>
-        <div class="tgl_tes"><p style="text-align: center; margin: 0px"><?= tgl_sertifikat(date("d-m-Y", strtotime($tgl_tes)))?></p></div>
+        <!-- <div class="tgl"><p style="text-align: center; margin: 0px"><?= date("d/m/y", strtotime($tgl_tes))?></p></div> -->
+        <!-- <div class="tgl_akhir"><p style="text-align: center; margin: 0px"><?= date("d/m/y", strtotime('+1 years', strtotime($tgl_tes)))?></p></div> -->
+        <div class="tgl_tes"><p style="text-align: center; margin: 0px"><b><?= date("d F Y", strtotime($tgl_tes))?></b></p></div>
     </body>
 </html>
