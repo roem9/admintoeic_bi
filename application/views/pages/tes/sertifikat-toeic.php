@@ -60,7 +60,7 @@
             width: 600px;
 			position: absolute;
             left: 100px;
-			top: 250px;
+			top: 255px;
             font-size: 26px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
@@ -94,7 +94,7 @@
             width: 120px;
 			position: absolute;
             left: 398px;
-			top: 320px;
+			top: <?= 320 + 5?>px;
             font-size: 14px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
@@ -116,7 +116,7 @@
             width: 120px;
 			position: absolute;
             left: 398px;
-			top: 339px;
+			top: <?= 339 + 5?>px;
             font-size: 14px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
@@ -127,7 +127,7 @@
             width: 120px;
 			position: absolute;
             left: 398px;
-			top: 358px;
+			top: <?= 358 + 5?>px;
             font-size: 14px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
@@ -146,9 +146,9 @@
         .tgl_akhir{
             /* background-color: red; */
 			position: absolute;
-            left: 254px;
-			bottom: 43px;
-            font-size: 14px;
+            left: 396px;
+			bottom: 30px;
+            font-size: 12px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
         }
@@ -156,8 +156,8 @@
         .tgl_tes{
             /* background-color: red; */
 			position: absolute;
-            left: 386px;
-			bottom: 23px;
+            left: 396px;
+			bottom: 48px;
             font-size: 12px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
@@ -167,9 +167,9 @@
             /* background-color: red; */
             width: 200px;
 			position: absolute;
-            left: 428px;
-			top: 215px;
-            font-size: 13px;
+            left: 368px;
+			top: 220px;
+            font-size: 12px;
             font-family: 'Roboto', sans-serif;
             word-spacing: 3px;
         }
@@ -226,7 +226,7 @@
         <div class="reading"><p style="text-align: right; margin: 0px"><b><?= $reading?></b></p></div>
         <div class="no_doc"><p style="margin: 0px"><?= $no_doc?></p></div>
         <!-- <div class="tgl"><p style="text-align: center; margin: 0px"><?= date("d/m/y", strtotime($tgl_tes))?></p></div> -->
-        <!-- <div class="tgl_akhir"><p style="text-align: center; margin: 0px"><?= date("d/m/y", strtotime('+1 years', strtotime($tgl_tes)))?></p></div> -->
+        <div class="tgl_akhir"><p style="text-align: center; margin: 0px"><b><?= date("d F Y", strtotime('+1 years', strtotime($tgl_tes)))?></b></p></div>
         <div class="tgl_tes"><p style="text-align: center; margin: 0px"><b><?= date("d F Y", strtotime($tgl_tes))?></b></p></div>
     </body>
 </html>
