@@ -352,7 +352,7 @@ class Tes extends MY_Controller {
 
         $skor = round($skor);
         
-        $peserta['no_doc'] = "EC/TOEIC/{$peserta['no_doc']}";
+        $peserta['no_doc'] = "BIN/TOEIC/{$peserta['tahun']}/{$peserta['no_doc']}";
 
         $peserta['config'] = $this->tes->config();
         $peserta['id_tes'] = $peserta['id_tes'];
